@@ -10,3 +10,9 @@ This is a multi-day assignment split into the following parts. Your task is to c
 Additionally, each part has a set of optional bonus assignments to try once you complete its main assignment. Since parts share many of the same bonus assignments, you may move to the next part without having finished all the bonuses.
 
 The [solutions](https://github.com/gSchool/fs-pet-shop-solutions) are available to instructors as well as students who've completed this series.
+
+# Information for running/testing this repository
+
+1. classExample.js is the classroom example
+1. nodeExample.js is practice using generic Node.js code
+1. expressExample.js is practice using the Express library
