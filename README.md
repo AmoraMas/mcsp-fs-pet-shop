@@ -15,4 +15,4 @@ The [solutions](https://github.com/gSchool/fs-pet-shop-solutions) are available 
 
 1. classExample.js is the classroom example
 1. nodeExample.js is practice using generic Node.js code
-1. expressExample.js is practice using the Express library
+1. expressServer.js is practice using the Express library

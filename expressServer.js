@@ -20,11 +20,17 @@ app.listen(port, function () {
 });
 
 // handle requests with routes
+
+// test request
+app.get("/test", (req, res, next) => {
+  res.send('The world is so awesome!');
+})
+
 // return all entries
 app.get("/pets/", (req, res, next) => {
   fs.readFile("pets.json", "utf8", function (error, data) {
-    res.json({ message: `${data}` });
-    //res.send(data);
+    //res.json({ message: `${data}` });
+    res.send(data);
   });
 });
 
@@ -41,8 +47,8 @@ app.get("/pets/:num", (req, res, next) => {
         //prettier-ignore
         next({ status: 404, message: `Please enter a number after /pets/ that is greater than 0 and less than ${data.length}` });
       } else {
-        res.json({ message: `${JSON.stringify(data[num])}` });
-        //res.send(data[num]);
+        //res.json({ message: `${JSON.stringify(data[num])}` });
+        res.send(JSON.stringify(data[num]));
       }
     });
   }
