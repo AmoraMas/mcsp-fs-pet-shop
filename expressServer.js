@@ -33,6 +33,7 @@ app.get("/test", (req, res, next) => {
 app.get("/pets", (req, res, next) => {
   fs.readFile("pets.json", "utf8", function (error, data) {
     //res.json({ message: `${data}` });
+    data = JSON.parse(data);
     res.send(data);
   });
 });
@@ -49,7 +50,7 @@ app.get("/pets/:petID", (req, res, next) => {
       return next({ status: 404, message: `Please enter a number after /pets/ that is greater than 0 and less than ${data.length}` });
     } else {
       //res.json({ message: `${JSON.stringify(data[num])}` });
-      res.send(JSON.stringify(data[petID]));
+      res.send(data[petID]);
     }
   });
 });

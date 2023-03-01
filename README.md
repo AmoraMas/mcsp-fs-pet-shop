@@ -13,6 +13,7 @@ The [solutions](https://github.com/gSchool/fs-pet-shop-solutions) are available 
 
 # Information for running/testing this repository
 
-1. classExample.js is the classroom example
-1. nodeExample.js is practice using generic Node.js code
-1. expressServer.js is practice using the Express library
+1. [classExample.js](./classExample.js) is the classroom example
+1. [nodeExample.js](./nodeExample.js) is practice using generic Node.js code
+1. [expressServer.js](./expressServer.js) is practice using the Express library
+1. [expressDBServer.js](./expressDBServer.js) is practice using Express with a PostgreSQL server
